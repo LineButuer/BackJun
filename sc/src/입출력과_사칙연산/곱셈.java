@@ -1,4 +1,4 @@
-package number1;
+package 입출력과_사칙연산;
 
 import java.util.Scanner;
 
