@@ -3,14 +3,19 @@ package number2;
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int a = scanner.nextInt();
-        if (a < 4000 && a >= 1) {
-            if (a % 400 == 0 || a % 4 == 0&& a%100!=0) {
-                System.out.println("1");
-            } else {
-                System.out.println("0");
+        int H = scanner.nextInt(), M = scanner.nextInt();
+        if (H >= 0 && H <= 23 && M >= 0 && M <= 59) {
+            if (H != 0 && M == M) {
+                int c = H - 1;
+                int d = M + 15;
+                System.out.println(c + " " + d);
+            } else if (H == 0 && M == M) {
+                H = 23;
+                int d = M + 15;
+                System.out.println(H + " " + d);
             }
         }
     }
